@@ -1,0 +1,2310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claiya Lou — Magical Personalized Storybooks for Little Girls</title>
+  <meta name="description" content="Turn your little girl into the hero of her very own magical storybook. Personalized children's books starring her face, her name, her adventure." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== SENSORY STORIES TOP RIBBON ===== -->
+  <div class="sensory-ribbon" id="sensoryRibbon">
+    <div class="sensory-ribbon-inner">
+      <span class="sr-pulse">🧩</span>
+      <span class="sr-text">New: <strong>Sensory Stories Collection</strong> — Books written with love for neurodiverse &amp; autistic children</span>
+      <a href="#sensory-spotlight" class="sr-cta">Discover Now ↓</a>
+    </div>
+    <button class="sr-close" onclick="document.getElementById('sensoryRibbon').style.display='none'" aria-label="Close">✕</button>
+  </div>
+
+  <!-- ===== ANNOUNCEMENT BAR ===== -->
+  <div class="announcement-bar" id="announcementBar">
+    <div class="announcement-inner">
+      <span class="star">✨</span>
+      <span>A gift she'll treasure forever — <strong>FREE personalized name page</strong> with every book &amp; <strong>New: Sensory Stories Collection</strong> now available!</span>
+      <span class="star">✨</span>
+      <a href="#books" class="ann-cta">Claim Offer</a>
+    </div>
+    <button class="ann-close" onclick="document.getElementById('announcementBar').style.display='none'" aria-label="Close">✕</button>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar container">
+      <div class="nav-logo">
+        <span class="logo-icon">📖</span>
+        <span class="logo-text">Claiya Lou</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#books">Books</a></li>
+        <li><a href="#sensory">Sensory Stories</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#family">Her Family</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#books" class="nav-cta-btn">Create Her Book ✨</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-icon-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+        <button class="nav-icon-btn cart-btn" aria-label="Cart" onclick="openCart()"><i class="fas fa-shopping-bag"></i><span class="cart-badge" id="cartBadge">0</span></button>
+        <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#books" onclick="toggleMenu()">📚 Our Books</a></li>
+      <li><a href="#sensory" onclick="toggleMenu()">🧩 Sensory Stories</a></li>
+      <li><a href="#gallery" onclick="toggleMenu()">📸 Gallery</a></li>
+      <li><a href="#family" onclick="toggleMenu()">💛 Her Family</a></li>
+      <li><a href="#how-it-works" onclick="toggleMenu()">✨ How It Works</a></li>
+      <li><a href="#reviews" onclick="toggleMenu()">💬 Reviews</a></li>
+      <li><a href="#faq" onclick="toggleMenu()">❓ FAQ</a></li>
+      <li><a href="#books" class="mobile-cta" onclick="toggleMenu()">Create Her Book →</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-stars"></div>
+      <div class="floating-elements">
+        <div class="float-el star-el">⭐</div>
+        <div class="float-el sparkle-el">✨</div>
+        <div class="float-el heart-el">💖</div>
+        <div class="float-el moon-el">🌙</div>
+        <div class="float-el butterfly-el">🦋</div>
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            A Gift Like No Other
+          </div>
+          <h1 class="hero-headline">
+            She's Not Just the<br />
+            <em>Reader</em> — She's the<br />
+            <span class="headline-highlight">Hero.</span>
+          </h1>
+          <p class="hero-sub">
+            Create a magical, personalised storybook where <strong>your little girl</strong> is the star of her very own adventure. Her face. Her name. Her story. A keepsake she'll treasure for a lifetime.
+          </p>
+          <div class="hero-actions">
+            <a href="#books" class="btn btn-primary pulse-btn">
+              <i class="fas fa-magic"></i>
+              Create Her Book
+            </a>
+            <a href="#how-it-works" class="btn btn-ghost">
+              <i class="fas fa-play-circle"></i>
+              See How It Works
+            </a>
+          </div>
+          <div class="hero-trust">
+            <div class="trust-item">
+              <div class="trust-stars">★★★★★</div>
+              <span>4,800+ families</span>
+            </div>
+            <div class="trust-divider">|</div>
+            <div class="trust-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>100% Happiness Guarantee</span>
+            </div>
+            <div class="trust-divider">|</div>
+            <div class="trust-item">
+              <i class="fas fa-truck"></i>
+              <span>Ships in 48 hrs</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-main-image-wrap">
+            <img src="images/books/magic.jpg" alt="Claiya Lou as a magical sorceress storybook illustration" class="hero-main-img" />
+            <div class="hero-img-badge">
+              <span>✨ She's the hero</span>
+            </div>
+          </div>
+          <div class="hero-mini-books">
+            <div class="mini-book-card" onclick="scrollToBooks()">
+              <img src="images/books/fairy.jpg" alt="Fairy Garden storybook" />
+              <span>Fairy Garden</span>
+            </div>
+            <div class="mini-book-card" onclick="scrollToBooks()">
+              <img src="images/books/safari.jpg" alt="Safari Star storybook" />
+              <span>Safari Star</span>
+            </div>
+            <div class="mini-book-card" onclick="scrollToBooks()">
+              <img src="images/books/space.jpg" alt="Among the Stars storybook" />
+              <span>Among the Stars</span>
+            </div>
+            <div class="mini-book-card" onclick="scrollToBooks()">
+              <img src="images/books/mermaid.jpg" alt="Mermaid Queen storybook" />
+              <span>Mermaid Queen</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-cue">
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- ===== SOCIAL PROOF TICKER ===== -->
+    <div class="proof-ticker">
+      <div class="ticker-inner">
+        <div class="ticker-track" id="tickerTrack">
+          <span class="tick">🌟 Aisha from Dubai just created "The Princess Inside"</span>
+          <span class="tick">🧩 Maya's mum from London ordered "Her Magic Headphones" — "She finally has a book that understands her!"</span>
+          <span class="tick">💖 Nour from London gifted "Unicorn Adventure" to her daughter</span>
+          <span class="tick">♾️ Lena from Toronto: "My autistic daughter cried when she saw herself in the story"</span>
+          <span class="tick">✨ Sara from Paris ordered 3 books for her twins!</span>
+          <span class="tick">🧩 Fatima from Abu Dhabi: "I Wove You is the most beautiful book I've ever read to my daughter"</span>
+          <span class="tick">🦋 Mia from NYC: "She cried happy tears — this is magical!"</span>
+          <span class="tick">♾️ Rania from Dubai: "The Perfect Line — she asked to read it 4 times in one day"</span>
+          <span class="tick">⭐ Lila from Toronto: "Best gift I've ever given"</span>
+          <span class="tick">🌸 Zara from Abu Dhabi just personalised "Ocean Explorer"</span>
+          <span class="tick">🧩 Grace's nana from Sydney ordered all 5 Sensory Stories as a bundle!</span>
+          <span class="tick">💫 Emma from Sydney: "My niece reads this every single night"</span>
+          <span class="tick">🌟 Aisha from Dubai just created "The Princess Inside"</span>
+          <span class="tick">🧩 Maya's mum from London ordered "Her Magic Headphones" — "She finally has a book that understands her!"</span>
+          <span class="tick">💖 Nour from London gifted "Unicorn Adventure" to her daughter</span>
+          <span class="tick">♾️ Lena from Toronto: "My autistic daughter cried when she saw herself in the story"</span>
+          <span class="tick">✨ Sara from Paris ordered 3 books for her twins!</span>
+          <span class="tick">⭐ Lila from Toronto: "Best gift I've ever given"</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SENSORY STORIES SPOTLIGHT ===== -->
+    <section class="sensory-spotlight" id="sensory-spotlight">
+      <div class="ssp-bg-glow"></div>
+      <div class="container">
+
+        <!-- Top Label -->
+        <div class="ssp-top-label">
+          <span class="ssp-badge">🧩 Most Important Collection</span>
+        </div>
+
+        <!-- Main Grid -->
+        <div class="ssp-grid">
+
+          <!-- LEFT: Emotional Copy -->
+          <div class="ssp-copy">
+            <div class="ssp-autism-badge">
+              <span class="ssp-autism-icon">♾️</span>
+              <span>Written for Autistic &amp; Neurodiverse Children</span>
+            </div>
+            <h2 class="ssp-headline">
+              She Sees the World<br />
+              <em>Differently.</em><br />
+              <span class="ssp-sub-headline">And That's Her Superpower.</span>
+            </h2>
+            <p class="ssp-para">
+              Every child deserves to see herself as the hero. But for neurodiverse girls — the ones who feel too much, who need things just right, who speak their own beautiful language — a generic story isn't enough.
+            </p>
+            <p class="ssp-para">
+              The <strong>Sensory Stories Collection</strong> was created specifically for her. Simple words. One idea per page. Predictable structure. Stories about <em>her exact experiences</em> — the headphones that make the world safe, the perfect line that makes her feel calm, the day that was just too much.
+            </p>
+            <div class="ssp-pillars">
+              <div class="ssp-pillar">
+                <span class="ssp-pillar-icon">✏️</span>
+                <div>
+                  <strong>Simple Words</strong>
+                  <p>Short sentences. Clear language. No overwhelm.</p>
+                </div>
+              </div>
+              <div class="ssp-pillar">
+                <span class="ssp-pillar-icon">🔁</span>
+                <div>
+                  <strong>Predictable Pages</strong>
+                  <p>Same gentle rhythm throughout. Safe structure.</p>
+                </div>
+              </div>
+              <div class="ssp-pillar">
+                <span class="ssp-pillar-icon">💛</span>
+                <div>
+                  <strong>Her Exact Experience</strong>
+                  <p>Stories she'll point at and say: <em>"That's me."</em></p>
+                </div>
+              </div>
+              <div class="ssp-pillar">
+                <span class="ssp-pillar-icon">🌟</span>
+                <div>
+                  <strong>Always Celebrated</strong>
+                  <p>Every difference framed as the superpower it is.</p>
+                </div>
+              </div>
+            </div>
+            <div class="ssp-actions">
+              <a href="#books" class="btn btn-sensory-main pulse-btn" onclick="setTimeout(()=>{document.querySelector('[data-filter=sensory]').click();},100)">
+                🧩 See All Sensory Stories
+              </a>
+              <a href="#sensory" class="btn btn-ghost-purple">
+                Learn More ↓
+              </a>
+            </div>
+            <div class="ssp-trust-row">
+              <div class="ssp-trust-item"><span>🏅</span> Autism-Aware Design</div>
+              <div class="ssp-trust-item"><span>💜</span> OT &amp; Parent Approved</div>
+              <div class="ssp-trust-item"><span>✅</span> 100% Happiness Guarantee</div>
+            </div>
+          </div>
+
+          <!-- RIGHT: Book Preview Cards -->
+          <div class="ssp-books">
+            <div class="ssp-books-label">5 Books in this Collection</div>
+            <div class="ssp-book-cards">
+
+              <div class="ssp-book-card ssp-book-featured" onclick="openPreview('iwoveyou')">
+                <div class="ssp-book-img-wrap">
+                  <img src="images/books/iwoveyou.jpg" alt="I Wove You sensory storybook" />
+                  <div class="ssp-book-glow"></div>
+                </div>
+                <div class="ssp-book-info">
+                  <div class="ssp-book-title">I Wove You</div>
+                  <div class="ssp-book-sub">She says it her own way.</div>
+                  <div class="ssp-book-tag">Ages 2–8</div>
+                </div>
+                <button class="ssp-book-btn" onclick="event.stopPropagation(); addToCart('I Wove You')">Personalise ✨</button>
+              </div>
+
+              <div class="ssp-book-card" onclick="openPreview('headphones')">
+                <div class="ssp-book-img-wrap">
+                  <img src="images/books/headphones.jpg" alt="Her Magic Headphones" />
+                </div>
+                <div class="ssp-book-info">
+                  <div class="ssp-book-title">Her Magic Headphones</div>
+                  <div class="ssp-book-tag">Ages 2–8</div>
+                </div>
+                <button class="ssp-book-btn" onclick="event.stopPropagation(); addToCart('Her Magic Headphones')">Personalise ✨</button>
+              </div>
+
+              <div class="ssp-book-card" onclick="openPreview('perfectline')">
+                <div class="ssp-book-img-wrap">
+                  <img src="images/books/perfectline.jpg" alt="The Perfect Line" />
+                </div>
+                <div class="ssp-book-info">
+                  <div class="ssp-book-title">The Perfect Line</div>
+                  <div class="ssp-book-tag">Ages 2–7</div>
+                </div>
+                <button class="ssp-book-btn" onclick="event.stopPropagation(); addToCart('The Perfect Line')">Personalise ✨</button>
+              </div>
+
+              <div class="ssp-book-card" onclick="openPreview('toomuch')">
+                <div class="ssp-book-img-wrap">
+                  <img src="images/books/toomuch.jpg" alt="Too Much Tuesday" />
+                </div>
+                <div class="ssp-book-info">
+                  <div class="ssp-book-title">Too Much Tuesday</div>
+                  <div class="ssp-book-tag">Ages 2–8</div>
+                </div>
+                <button class="ssp-book-btn" onclick="event.stopPropagation(); addToCart('Too Much Tuesday')">Personalise ✨</button>
+              </div>
+
+              <div class="ssp-book-card" onclick="openPreview('specialthing')">
+                <div class="ssp-book-img-wrap">
+                  <img src="images/books/specialthing.jpg" alt="Her Special Thing" />
+                </div>
+                <div class="ssp-book-info">
+                  <div class="ssp-book-title">Her Special Thing</div>
+                  <div class="ssp-book-tag">Ages 2–9</div>
+                </div>
+                <button class="ssp-book-btn" onclick="event.stopPropagation(); addToCart('Her Special Thing')">Personalise ✨</button>
+              </div>
+
+            </div>
+
+            <!-- Bundle Upsell -->
+            <div class="ssp-bundle-card">
+              <div class="ssp-bundle-badge">🔥 Best Value</div>
+              <div class="ssp-bundle-content">
+                <div class="ssp-bundle-icon">📚</div>
+                <div class="ssp-bundle-copy">
+                  <strong>Get All 5 Sensory Stories</strong>
+                  <p>The complete collection — one for every feeling, every experience, every part of her.</p>
+                  <div class="ssp-bundle-price">
+                    <span class="ssp-bundle-new">$149.99</span>
+                    <span class="ssp-bundle-old">$199.95</span>
+                    <span class="ssp-bundle-save">Save $50</span>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-sensory-bundle" onclick="openSensoryBundle()">
+                🧩 Order Complete Collection
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Origin Quote -->
+        <div class="ssp-quote-wrap">
+          <div class="ssp-quote">
+            <div class="ssp-quote-mark">"</div>
+            <blockquote>I made these because I wanted Claiya Lou to open a book and say <em>"that's me"</em> — not just see herself in the pictures, but feel understood on every single page.</blockquote>
+            <cite>— Uncle Mehdi, creator of Claiya Lou Books 💛</cite>
+          </div>
+        </div>
+
+        <!-- Upsell Bridge: After buying sensory, explore other adventures -->
+        <div class="ssp-upsell-bridge">
+          <div class="ssp-upsell-left">
+            <h3>Once She's Seen &amp; Celebrated…</h3>
+            <p>Give her a world to explore too. Our adventure, princess, and nature books are the perfect companions — built on the same magic, made for the same girl.</p>
+            <a href="#books" class="btn btn-outline-purple">Explore All 28 Books →</a>
+          </div>
+          <div class="ssp-upsell-mini-books">
+            <div class="ssp-upm-card" onclick="addToCart('The Princess Inside')">
+              <img src="images/books/princess.jpg" alt="The Princess Inside" />
+              <span>Princess</span>
+            </div>
+            <div class="ssp-upm-card" onclick="addToCart('Ocean Explorer')">
+              <img src="images/books/ocean.jpg" alt="Ocean Explorer" />
+              <span>Ocean</span>
+            </div>
+            <div class="ssp-upm-card" onclick="addToCart('Unicorn Skies')">
+              <img src="images/books/unicorn.jpg" alt="Unicorn Skies" />
+              <span>Unicorn</span>
+            </div>
+            <div class="ssp-upm-card" onclick="addToCart('Chef Claiya\'s Rainbow Kitchen')">
+              <img src="images/books/chef.jpg" alt="Chef Book" />
+              <span>Chef</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Simple & Magical</span>
+          <h2 class="section-title">From Photo to Storybook<br /><em>in 3 Easy Steps</em></h2>
+          <p class="section-sub">Creating her magical book is as easy as 1-2-3. No design skills needed — just love.</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card" data-step="1">
+            <div class="step-number">01</div>
+            <div class="step-icon-wrap">
+              <div class="step-icon">📸</div>
+            </div>
+            <h3>Upload Her Photo</h3>
+            <p>Choose any clear, recent photo of your little girl. Our artists will transform her into the story's magical hero.</p>
+            <div class="step-detail">Any phone photo works perfectly</div>
+          </div>
+          <div class="step-connector"><i class="fas fa-chevron-right"></i></div>
+          <div class="step-card" data-step="2">
+            <div class="step-number">02</div>
+            <div class="step-icon-wrap">
+              <div class="step-icon">🪄</div>
+            </div>
+            <h3>Pick Her Adventure</h3>
+            <p>Choose from enchanting themes — princess, superhero, ocean explorer, forest fairy, and more. Add her name for the perfect touch.</p>
+            <div class="step-detail">12+ magical themes to choose from</div>
+          </div>
+          <div class="step-connector"><i class="fas fa-chevron-right"></i></div>
+          <div class="step-card" data-step="3">
+            <div class="step-number">03</div>
+            <div class="step-icon-wrap">
+              <div class="step-icon">💌</div>
+            </div>
+            <h3>We Create the Magic</h3>
+            <p>Our talented illustrators hand-craft her personalised book. Preview it digitally, then we print and deliver to your door.</p>
+            <div class="step-detail">Ships within 48 hours of approval</div>
+          </div>
+        </div>
+        <div class="steps-cta">
+          <a href="#books" class="btn btn-primary">Start Creating Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BOOKS SECTION ===== -->
+    <section class="books-section" id="books">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">✨ 28 Personalised Books</span>
+          <h2 class="section-title">Choose <em>Her</em> Adventure</h2>
+          <p class="section-sub">Every book is hand-illustrated and personalised with her photo and name. A story only she can star in — across 9 magical themes including our new <strong>Sensory Stories</strong> and <strong>Her Favourite Things</strong> collections.</p>
+          <div class="books-count-bar">
+            <div class="bcb-item"><span class="bcb-num">28</span><span class="bcb-label">Unique Books</span></div>
+            <div class="bcb-divider"></div>
+            <div class="bcb-item"><span class="bcb-num">10</span><span class="bcb-label">Themes</span></div>
+            <div class="bcb-divider"></div>
+            <div class="bcb-item"><span class="bcb-num">4,800+</span><span class="bcb-label">Happy Families</span></div>
+            <div class="bcb-divider"></div>
+            <div class="bcb-item"><span class="bcb-num">★ 4.9</span><span class="bcb-label">Average Rating</span></div>
+          </div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">✨ All Books</button>
+          <button class="filter-btn" data-filter="princess">👑 Princess & Magic</button>
+          <button class="filter-btn" data-filter="adventure">🌍 Adventure</button>
+          <button class="filter-btn" data-filter="nature">🦋 Nature & Animals</button>
+          <button class="filter-btn" data-filter="empowerment">⚡ Empowerment</button>
+          <button class="filter-btn" data-filter="seasonal">🌸 Seasonal</button>
+          <button class="filter-btn" data-filter="love">💖 Love & Family</button>
+          <button class="filter-btn filter-btn--sensory" data-filter="sensory">🧩 Sensory Stories</button>
+          <button class="filter-btn filter-btn--special" data-filter="special">🎨 Her Story</button>
+        </div>
+
+        <!-- Her Story Banner -->
+        <div class="sensory-banner special-banner" id="specialBanner" style="display:none">
+          <div class="sensory-banner-inner">
+            <div class="sb-icon">🎨</div>
+            <div class="sb-text">
+              <h3>Her Favourite Things Collection</h3>
+              <p>Three books written about what Claiya Lou loves most — painting in the backyard, eating the world's best food, and her beloved cotton candy. Real life. Real magic.</p>
+            </div>
+            <div class="sb-badge" style="background: linear-gradient(135deg,#F59E0B,#EC4899);">Real Stories</div>
+          </div>
+        </div>
+
+        <!-- Sensory Stories Banner -->
+        <div class="sensory-banner" id="sensoryBanner" style="display:none">
+          <div class="sensory-banner-inner">
+            <div class="sb-icon">🧩</div>
+            <div class="sb-text">
+              <h3>Sensory Stories Collection</h3>
+              <p>Written with love for neurodiverse children. Simple words. Predictable pages. Stories that see every part of her — exactly as she is.</p>
+            </div>
+            <div class="sb-badge">New Collection</div>
+          </div>
+        </div>
+
+        <div class="books-grid" id="booksGrid">
+
+          <!-- Book 1 -->
+          <div class="book-card" data-category="princess">
+            <div class="book-badge sale">Save 33%</div>
+            <div class="book-image-wrap">
+              <img src="images/books/princess.jpg" alt="The Princess Inside storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('princess')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag">👑 Princess & Magic</div>
+              <h3 class="book-title">The Princess Inside</h3>
+              <p class="book-desc">She discovers the palace hidden in her heart — a timeless story of inner strength, kindness, and royal courage.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(312 reviews)</span></div>
+                <div class="book-age">Ages 2–8</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book" onclick="addToCart('The Princess Inside')">
+                <i class="fas fa-magic"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 2 -->
+          <div class="book-card featured" data-category="adventure">
+            <div class="book-badge bestseller">⭐ Bestseller</div>
+            <div class="book-image-wrap">
+              <img src="images/books/unicorn.jpg" alt="Unicorn Adventure storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('unicorn')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag">🦄 Magical Adventure</div>
+              <h3 class="book-title">Unicorn Skies</h3>
+              <p class="book-desc">She soars through rainbow clouds on the back of a glittering unicorn, discovering that magic lives within brave hearts.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(487 reviews)</span></div>
+                <div class="book-age">Ages 2–7</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book" onclick="addToCart('Unicorn Skies')">
+                <i class="fas fa-magic"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 3 -->
+          <div class="book-card" data-category="empowerment">
+            <div class="book-badge sale">Save 33%</div>
+            <div class="book-image-wrap">
+              <img src="images/books/supergirl.jpg" alt="Super Girl storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('superhero')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag">⚡ Empowerment</div>
+              <h3 class="book-title">Super Girl</h3>
+              <p class="book-desc">She flies above the city with her cape shining — a thrilling story about courage, kindness, and the power to be extraordinary.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(268 reviews)</span></div>
+                <div class="book-age">Ages 3–9</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book" onclick="addToCart('Super Girl')">
+                <i class="fas fa-magic"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 4 -->
+          <div class="book-card" data-category="nature">
+            <div class="book-badge new">🌿 New</div>
+            <div class="book-image-wrap">
+              <img src="images/books/animals.jpg" alt="Animal Friends storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('animals')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag">🦋 Nature & Animals</div>
+              <h3 class="book-title">The Animal Keeper</h3>
+              <p class="book-desc">She befriends woodland animals in a sun-dappled meadow — a gentle story about compassion, friendship, and the beauty of nature.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(194 reviews)</span></div>
+                <div class="book-age">Ages 1–6</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book" onclick="addToCart('The Animal Keeper')">
+                <i class="fas fa-magic"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 5 -->
+          <div class="book-card" data-category="adventure">
+            <div class="book-badge sale">Save 33%</div>
+            <div class="book-image-wrap">
+              <img src="images/books/ocean.jpg" alt="Ocean Explorer storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('ocean')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag">🌊 Ocean Adventure</div>
+              <h3 class="book-title">Ocean Explorer</h3>
+              <p class="book-desc">She dives into the deep blue and discovers a sparkling underwater kingdom — where mermaids, fish, and wonders await.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(231 reviews)</span></div>
+                <div class="book-age">Ages 2–8</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book" onclick="addToCart('Ocean Explorer')">
+                <i class="fas fa-magic"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 6 - Forest -->
+          <div class="book-card" data-category="nature">
+            <div class="book-badge sale">Save 33%</div>
+            <div class="book-image-wrap">
+              <img src="images/books/forest.jpg" alt="Enchanted Forest storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('forest')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag">🌲 Enchanted Forest</div>
+              <h3 class="book-title">The Enchanted Forest</h3>
+              <p class="book-desc">She wanders into a magical golden forest where fireflies light her path and every creature has a secret to share.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(178 reviews)</span></div>
+                <div class="book-age">Ages 2–7</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book" onclick="addToCart('The Enchanted Forest')">
+                <i class="fas fa-magic"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 7 - Fairy Garden -->
+          <div class="book-card" data-category="princess">
+            <div class="book-badge bestseller">⭐ Bestseller</div>
+            <div class="book-image-wrap">
+              <img src="images/books/fairy.jpg" alt="The Fairy Garden storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('fairy')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag">🧚 Princess & Magic</div>
+              <h3 class="book-title">The Fairy Garden</h3>
+              <p class="book-desc">She discovers a hidden world behind the garden gate — where fairies crown her their golden princess and flowers sing her name.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(341 reviews)</span></div>
+                <div class="book-age">Ages 2–8</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book" onclick="addToCart('The Fairy Garden')">
+                <i class="fas fa-magic"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 8 - The Magic Maker -->
+          <div class="book-card" data-category="princess">
+            <div class="book-badge new">🪄 New</div>
+            <div class="book-image-wrap">
+              <img src="images/books/magic.jpg" alt="The Magic Maker storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('magic')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag">🌟 Princess & Magic</div>
+              <h3 class="book-title">The Magic Maker</h3>
+              <p class="book-desc">She raises her glowing wand and the whole academy gasps — because the most powerful magic of all comes from believing in yourself.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(219 reviews)</span></div>
+                <div class="book-age">Ages 3–9</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book" onclick="addToCart('The Magic Maker')">
+                <i class="fas fa-magic"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 9 - Safari Adventure -->
+          <div class="book-card" data-category="adventure">
+            <div class="book-badge sale">Save 33%</div>
+            <div class="book-image-wrap">
+              <img src="images/books/safari.jpg" alt="Safari Adventure storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('safari')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag">🐘 Adventure</div>
+              <h3 class="book-title">Safari Star</h3>
+              <p class="book-desc">Atop her elephant friend, she leads a grand adventure across the golden savanna — and every animal bows to the bravest explorer they've ever seen.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(287 reviews)</span></div>
+                <div class="book-age">Ages 3–8</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book" onclick="addToCart('Safari Star')">
+                <i class="fas fa-magic"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 10 - Space Explorer -->
+          <div class="book-card featured" data-category="adventure">
+            <div class="book-badge new">🚀 New</div>
+            <div class="book-image-wrap">
+              <img src="images/books/space.jpg" alt="Space Explorer storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('space')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag">🚀 Adventure</div>
+              <h3 class="book-title">Among the Stars</h3>
+              <p class="book-desc">She floats through the Milky Way in her silver suit — the youngest, bravest astronaut in the universe, discovering that the sky is never the limit.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(156 reviews)</span></div>
+                <div class="book-age">Ages 4–9</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book" onclick="addToCart('Among the Stars')">
+                <i class="fas fa-magic"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 11 - Mermaid Queen -->
+          <div class="book-card" data-category="adventure">
+            <div class="book-badge sale">Save 33%</div>
+            <div class="book-image-wrap">
+              <img src="images/books/mermaid.jpg" alt="Mermaid Queen storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('mermaid')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag">🧜 Adventure</div>
+              <h3 class="book-title">Mermaid Queen</h3>
+              <p class="book-desc">Deep beneath the waves she discovers her kingdom — a shimmering coral palace where every creature cheers as she takes her rightful place as queen.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(302 reviews)</span></div>
+                <div class="book-age">Ages 2–8</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book" onclick="addToCart('Mermaid Queen')">
+                <i class="fas fa-magic"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 12 - Baby Animal Doctor -->
+          <div class="book-card" data-category="nature">
+            <div class="book-badge new">🌿 New</div>
+            <div class="book-image-wrap">
+              <img src="images/books/doctor.jpg" alt="Baby Animal Doctor storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('doctor')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag">🐾 Nature & Animals</div>
+              <h3 class="book-title">Dr. Claiya's Animal Clinic</h3>
+              <p class="book-desc">With her tiny stethoscope and the biggest heart, she heals every baby animal in the sanctuary — because kindness is the greatest medicine of all.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(198 reviews)</span></div>
+                <div class="book-age">Ages 1–6</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book" onclick="addToCart('Dr. Claiya\'s Animal Clinic')">
+                <i class="fas fa-magic"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 13 - Magic Chef -->
+          <div class="book-card" data-category="empowerment">
+            <div class="book-badge bestseller">⭐ Bestseller</div>
+            <div class="book-image-wrap">
+              <img src="images/books/chef.jpg" alt="The Magic Chef storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('chef')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag">👩‍🍳 Empowerment</div>
+              <h3 class="book-title">Chef Claiya's Rainbow Kitchen</h3>
+              <p class="book-desc">She stirs the glowing batter and out pop rainbow cupcakes that grant wishes! The secret ingredient? A spoonful of joy and a whole lot of love.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(264 reviews)</span></div>
+                <div class="book-age">Ages 2–7</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book" onclick="addToCart('Chef Claiya\'s Rainbow Kitchen')">
+                <i class="fas fa-magic"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 14 - Easter Spring -->
+          <div class="book-card" data-category="seasonal">
+            <div class="book-badge sale">Save 33%</div>
+            <div class="book-image-wrap">
+              <img src="images/books/easter.jpg" alt="The Easter Magic storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('easter')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag">🐣 Seasonal</div>
+              <h3 class="book-title">Claiya's Easter Magic</h3>
+              <p class="book-desc">She tumbles into the most magical Easter morning ever — where golden eggs glow, baby chicks dance, and every flower blooms just for her.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(411 reviews)</span></div>
+                <div class="book-age">Ages 1–6</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book" onclick="addToCart('Claiya\'s Easter Magic')">
+                <i class="fas fa-magic"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 15 - Always Loved -->
+          <div class="book-card featured" data-category="love">
+            <div class="book-badge bestseller">💖 Fan Fave</div>
+            <div class="book-image-wrap">
+              <img src="images/books/loved.jpg" alt="Always Loved storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('loved')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag">💝 Love & Family</div>
+              <h3 class="book-title">Always & Forever Loved</h3>
+              <p class="book-desc">From the very first moment, she was surrounded by love. A tender, timeless story every parent, uncle, and grandparent will read through happy tears.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(523 reviews)</span></div>
+                <div class="book-age">Ages 0–5</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book" onclick="addToCart('Always & Forever Loved')">
+                <i class="fas fa-magic"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 16 - Three of Us -->
+          <div class="book-card featured" data-category="love">
+            <div class="book-badge bestseller">💛 New</div>
+            <div class="book-image-wrap">
+              <img src="images/books/threeofus.jpg" alt="The Three of Us storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('threeofus')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag">💛 Love & Family</div>
+              <h3 class="book-title">The Three of Us</h3>
+              <p class="book-desc">A big brother, a big sister, and the little one who completes them all. Their greatest adventure isn't a place — it's each other.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(189 reviews)</span></div>
+                <div class="book-age">Ages 1–8</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book" onclick="addToCart('The Three of Us')">
+                <i class="fas fa-magic"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 17 - My Big Brother -->
+          <div class="book-card" data-category="love">
+            <div class="book-badge new">💙 New</div>
+            <div class="book-image-wrap">
+              <img src="images/books/bigbrother.jpg" alt="My Big Brother storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('bigbrother')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag">💙 Love & Family</div>
+              <h3 class="book-title">My Big Brother, My Hero</h3>
+              <p class="book-desc">He lifts her up when she can't reach. He makes her laugh till her tummy hurts. He's her very first best friend — and the best superhero she knows.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(312 reviews)</span></div>
+                <div class="book-age">Ages 1–7</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book" onclick="addToCart('My Big Brother, My Hero')">
+                <i class="fas fa-magic"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 18 - My Big Sister -->
+          <div class="book-card" data-category="love">
+            <div class="book-badge new">🌸 New</div>
+            <div class="book-image-wrap">
+              <img src="images/books/bigsister.jpg" alt="My Big Sister storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('bigsister')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag">🌸 Love & Family</div>
+              <h3 class="book-title">My Big Sister, My Guide</h3>
+              <p class="book-desc">She showed her how to twirl, how to smile, and how to walk into any room like she already owns it. Sisters don't just share blood — they share magic.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(276 reviews)</span></div>
+                <div class="book-age">Ages 1–7</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book" onclick="addToCart('My Big Sister, My Guide')">
+                <i class="fas fa-magic"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 19 - Adventure Squad -->
+          <div class="book-card" data-category="love">
+            <div class="book-badge sale">Save 33%</div>
+            <div class="book-image-wrap">
+              <img src="images/books/squad.jpg" alt="Adventure Squad storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('squad')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag">🌊 Love & Family</div>
+              <h3 class="book-title">The Sibling Squad</h3>
+              <p class="book-desc">Three siblings. One incredible adventure. From the aquarium to the ends of the earth — together they can explore anything the world has to offer.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(241 reviews)</span></div>
+                <div class="book-age">Ages 2–9</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book" onclick="addToCart('The Sibling Squad')">
+                <i class="fas fa-magic"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+
+          <!-- ═══════════════════════════════════════ -->
+          <!-- SENSORY STORIES COLLECTION (Books 20-25) -->
+          <!-- ═══════════════════════════════════════ -->
+
+          <!-- Book 20 - I Wove You -->
+          <div class="book-card featured" data-category="sensory">
+            <div class="book-badge sensory-badge">🧩 Sensory</div>
+            <div class="book-image-wrap">
+              <img src="images/books/iwoveyou.jpg" alt="I Wove You storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('iwoveyou')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag sensory-theme-tag">🧩 Sensory Stories</div>
+              <h3 class="book-title">I Wove You</h3>
+              <p class="book-desc">She says it her own way. Three words that mean everything. And her way is the most beautiful way of all.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(New)</span></div>
+                <div class="book-age">Ages 2–8</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book btn-sensory" onclick="addToCart('I Wove You')">
+                <i class="fas fa-heart"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 21 - Her Magic Headphones -->
+          <div class="book-card" data-category="sensory">
+            <div class="book-badge sensory-badge">🧩 Sensory</div>
+            <div class="book-image-wrap">
+              <img src="images/books/headphones.jpg" alt="Her Magic Headphones storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('headphones')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag sensory-theme-tag">🧩 Sensory Stories</div>
+              <h3 class="book-title">Her Magic Headphones</h3>
+              <p class="book-desc">The world is loud. Her headphones make it hers. She doesn't block out the world — she turns it into music.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(New)</span></div>
+                <div class="book-age">Ages 2–8</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book btn-sensory" onclick="addToCart('Her Magic Headphones')">
+                <i class="fas fa-heart"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 22 - The Perfect Line -->
+          <div class="book-card" data-category="sensory">
+            <div class="book-badge sensory-badge">🧩 Sensory</div>
+            <div class="book-image-wrap">
+              <img src="images/books/perfectline.jpg" alt="The Perfect Line storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('perfectline')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag sensory-theme-tag">🧩 Sensory Stories</div>
+              <h3 class="book-title">The Perfect Line</h3>
+              <p class="book-desc">Everything in its place. Everything just right. She lines them up — and it is the most beautiful thing in the world.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(New)</span></div>
+                <div class="book-age">Ages 2–7</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book btn-sensory" onclick="addToCart('The Perfect Line')">
+                <i class="fas fa-heart"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 23 - Daddy's Boots by the Door -->
+          <div class="book-card featured" data-category="sensory">
+            <div class="book-badge military-badge">🎖️ Military Family</div>
+            <div class="book-image-wrap">
+              <img src="images/books/daddyboots.jpg" alt="Daddy's Boots by the Door storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('daddyboots')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag military-theme-tag">🎖️ Military Family</div>
+              <h3 class="book-title">Daddy's Boots by the Door</h3>
+              <p class="book-desc">He goes away so others can be safe. Every night she looks at the same moon he sees. And she knows — she is never really alone.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(New)</span></div>
+                <div class="book-age">Ages 2–8</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book btn-military" onclick="addToCart('Daddy\'s Boots by the Door')">
+                <i class="fas fa-star"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 24 - Too Much Tuesday -->
+          <div class="book-card" data-category="sensory">
+            <div class="book-badge sensory-badge">🧩 Sensory</div>
+            <div class="book-image-wrap">
+              <img src="images/books/toomuch.jpg" alt="Too Much Tuesday storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('toomuch')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag sensory-theme-tag">🧩 Sensory Stories</div>
+              <h3 class="book-title">Too Much Tuesday</h3>
+              <p class="book-desc">Some days are too loud. Too bright. Too much. And that is okay. She knows how to find her quiet — and her quiet is beautiful.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(New)</span></div>
+                <div class="book-age">Ages 2–8</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book btn-sensory" onclick="addToCart('Too Much Tuesday')">
+                <i class="fas fa-heart"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 25 - Her Special Thing -->
+          <div class="book-card" data-category="sensory">
+            <div class="book-badge sensory-badge">🧩 Sensory</div>
+            <div class="book-image-wrap">
+              <img src="images/books/specialthing.jpg" alt="Her Special Thing storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('specialthing')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag sensory-theme-tag">🧩 Sensory Stories</div>
+              <h3 class="book-title">Her Special Thing</h3>
+              <p class="book-desc">Everyone has a special thing. Hers lights her up from the inside out. And that is not strange — that is extraordinary.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(New)</span></div>
+                <div class="book-age">Ages 2–9</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book btn-sensory" onclick="addToCart('Her Special Thing')">
+                <i class="fas fa-heart"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- ═══════════════════════════════════════ -->
+          <!-- HER FAVOURITE THINGS COLLECTION (Books 26-28) -->
+          <!-- ═══════════════════════════════════════ -->
+
+          <!-- Book 26 - Claiya's Rainbow Paintbrush -->
+          <div class="book-card featured" data-category="special">
+            <div class="book-badge special-badge">🎨 Her Story</div>
+            <div class="book-image-wrap">
+              <img src="images/books/paintbrush.jpg" alt="Claiya's Rainbow Paintbrush storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('paintbrush')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag special-theme-tag">🎨 Her Favourite Things</div>
+              <h3 class="book-title">Claiya's Rainbow Paintbrush</h3>
+              <p class="book-desc">She goes to the backyard. She dips her brush. Red for brave. Blue for Daddy. Yellow for cotton-candy days. And when she steps back — the whole world glows.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(New)</span></div>
+                <div class="book-age">Ages 2–8</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book btn-special" onclick="addToCart('Claiya\'s Rainbow Paintbrush')">
+                <i class="fas fa-paint-brush"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 27 - The Cotton Candy Cloud -->
+          <div class="book-card" data-category="special">
+            <div class="book-badge special-badge">🩷 Her Story</div>
+            <div class="book-image-wrap">
+              <img src="images/books/cottoncandy.jpg" alt="The Cotton Candy Cloud storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('cottoncandy')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag special-theme-tag">🩷 Her Favourite Things</div>
+              <h3 class="book-title">The Cotton Candy Cloud</h3>
+              <p class="book-desc">One bite of pink cotton candy and she starts to float — past rooftops, past treetops, into a sky that tastes exactly like the best moment of your life.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(New)</span></div>
+                <div class="book-age">Ages 2–7</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book btn-special" onclick="addToCart('The Cotton Candy Cloud')">
+                <i class="fas fa-heart"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+          <!-- Book 28 - Claiya Tastes the World -->
+          <div class="book-card" data-category="special">
+            <div class="book-badge special-badge">🍽️ Her Story</div>
+            <div class="book-image-wrap">
+              <img src="images/books/tastetheworld.jpg" alt="Claiya Tastes the World storybook" class="book-cover-img" />
+              <div class="book-overlay">
+                <button class="preview-btn" onclick="openPreview('tastetheworld')">
+                  <i class="fas fa-eye"></i> Preview Pages
+                </button>
+              </div>
+            </div>
+            <div class="book-info">
+              <div class="book-theme-tag special-theme-tag">🍽️ Her Favourite Things</div>
+              <h3 class="book-title">Claiya Tastes the World</h3>
+              <p class="book-desc">She doesn't just eat food — she goes places. The funnel cake is a carnival at night. The cotton candy is flying. Every bite takes her somewhere new.</p>
+              <div class="book-meta">
+                <div class="book-stars">★★★★★ <span>(New)</span></div>
+                <div class="book-age">Ages 1–7</div>
+              </div>
+              <div class="book-pricing">
+                <span class="price-current">From $39.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="btn btn-book btn-special" onclick="addToCart('Claiya Tastes the World')">
+                <i class="fas fa-utensils"></i> Personalise This Book
+              </button>
+            </div>
+          </div>
+
+        </div><!-- end books-grid -->
+      </div>
+    </section>
+
+    <!-- ===== CLAIYA LOU GALLERY ===== -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">✨ The Star of Every Story</span>
+          <h2 class="section-title">Meet <em>Claiya Lou</em></h2>
+          <p class="section-sub">The brave, curious, joyful little girl who inspired every page — and stole every heart.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item gallery-item--tall">
+            <img src="images/gallery/preket.jpg" alt="Claiya Lou excited for Pre-K" />
+            <div class="gallery-caption">First Day of Pre-K 🎒</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/smile.jpg" alt="Claiya Lou smiling" />
+            <div class="gallery-caption">That million-dollar smile 😄</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/food.jpg" alt="Claiya Lou tasting food" />
+            <div class="gallery-caption">Future MasterChef 👩‍🍳</div>
+          </div>
+          <div class="gallery-item gallery-item--tall">
+            <img src="images/gallery/easter.jpg" alt="Baby Claiya Lou at Easter" />
+            <div class="gallery-caption">Baby's First Easter 🐣</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/zoo.jpg" alt="Claiya Lou at the zoo" />
+            <div class="gallery-caption">Zoo adventurer 🦒</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/baby.jpg" alt="Baby Claiya Lou" />
+            <div class="gallery-caption">From the very beginning 💕</div>
+          </div>
+        </div>
+        <div class="gallery-quote">
+          <blockquote>"Every photo is a chapter. Every smile is a story. She was born to be the hero."</blockquote>
+          <cite>— Uncle Mehdi 💛</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SENSORY STORIES SECTION ===== -->
+    <section class="sensory-section" id="sensory">
+      <div class="sensory-section-bg"></div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag sensory-tag">🧩 Autism-Aware Collection</span>
+          <h2 class="section-title">Why Sensory Stories<br /><em>Change Everything</em></h2>
+          <p class="section-sub">For neurodiverse children, the right book doesn't just tell a story — it says <strong>"I see you. I understand you. You are perfect exactly as you are."</strong></p>
+        </div>
+
+        <!-- What makes these different -->
+        <div class="sensory-pillars">
+          <div class="sensory-pillar">
+            <div class="sp-icon">✏️</div>
+            <h4>Simple Words</h4>
+            <p>One idea per page. Short sentences. Clear language designed for how she reads the world.</p>
+          </div>
+          <div class="sensory-pillar">
+            <div class="sp-icon">🔁</div>
+            <h4>Predictable Pages</h4>
+            <p>Every page follows the same gentle rhythm. No surprises. Just safe, comforting structure.</p>
+          </div>
+          <div class="sensory-pillar">
+            <div class="sp-icon">💛</div>
+            <h4>Her Exact Experience</h4>
+            <p>The headphones. The perfect line. The big feelings. Stories that make her say: that's me.</p>
+          </div>
+          <div class="sensory-pillar">
+            <div class="sp-icon">🌟</div>
+            <h4>Always Celebrated</h4>
+            <p>Every trait. Every quirk. Every beautiful difference. Framed as the superpower it truly is.</p>
+          </div>
+        </div>
+
+        <!-- Origin quote -->
+        <div class="sensory-origin">
+          <div class="sensory-origin-inner">
+            <div class="so-quote-mark">"</div>
+            <blockquote>She doesn't need to understand autism. She needs to know that every single part of her is wonderful. These books are for her.</blockquote>
+            <cite>— Uncle Mehdi, creator of Claiya Lou Books 💛</cite>
+          </div>
+        </div>
+
+        <div class="sensory-cta-row">
+          <a href="#books" class="btn btn-sensory-cta" onclick="document.querySelector('[data-filter=sensory]').click(); scrollToBooks();">
+            🧩 See All Sensory Stories
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAMILY / SIBLINGS SECTION ===== -->
+    <section class="siblings-section" id="family">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag fam-tag">💛 Her World</span>
+          <h2 class="section-title">The People Who <em>Make Her Story</em></h2>
+          <p class="section-sub">Every hero has her squad. Meet the big brother who lifts her up, the big sister who shows her the way, and the little heart they all protect.</p>
+        </div>
+
+        <!-- Sibling Intro Cards -->
+        <div class="sibling-intro-grid">
+          <div class="sib-card">
+            <div class="sib-photo-wrap">
+              <img src="images/family/bigbrother.jpg" alt="Big Brother" />
+              <div class="sib-crown">👑</div>
+            </div>
+            <div class="sib-info">
+              <div class="sib-role">Big Brother</div>
+              <h3 class="sib-name">The King</h3>
+              <p>The one who carries her on his shoulders — literally. Her protector, her hype man, her favourite person to bug.</p>
+              <div class="sib-trait-tags">
+                <span>🕶️ Cool</span>
+                <span>💪 Strong</span>
+                <span>😂 Funny</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sib-card sib-card--star">
+            <div class="sib-photo-wrap">
+              <img src="images/family/claiya.jpg" alt="Claiya Lou — the star" />
+              <div class="sib-crown">⭐</div>
+            </div>
+            <div class="sib-info">
+              <div class="sib-role" style="background: linear-gradient(135deg,var(--primary),var(--accent)); color:white;">The Star ✨</div>
+              <h3 class="sib-name">Claiya Lou</h3>
+              <p>The youngest. The boldest. The one who walked into the room and made everyone forget what they were doing.</p>
+              <div class="sib-trait-tags">
+                <span>👑 Fearless</span>
+                <span>💖 Loved</span>
+                <span>🌟 Magic</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sib-card">
+            <div class="sib-photo-wrap">
+              <img src="images/family/bigsister.jpg" alt="Big Sister" />
+              <div class="sib-crown">🌸</div>
+            </div>
+            <div class="sib-info">
+              <div class="sib-role">Big Sister</div>
+              <h3 class="sib-name">The Fashionista</h3>
+              <p>The one who taught her how to walk in style, how to smile for the camera, and how to own every single room she enters.</p>
+              <div class="sib-trait-tags">
+                <span>👗 Stylish</span>
+                <span>💃 Bold</span>
+                <span>🤩 Iconic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Family Photo Gallery Grid -->
+        <div class="family-gallery-header">
+          <h3>📸 Growing Up Together</h3>
+          <p>From their very first Christmas to their first day of school — a lifetime of memories in the making.</p>
+        </div>
+        <div class="family-gallery-grid">
+          <div class="fam-photo fam-photo--wide">
+            <img src="images/family/backtoschool.jpg" alt="Siblings back to school" />
+            <div class="fam-photo-cap">📚 Back to School Together</div>
+          </div>
+          <div class="fam-photo">
+            <img src="images/family/christmas.jpg" alt="Siblings as babies at Christmas" />
+            <div class="fam-photo-cap">🎄 Their First Christmas</div>
+          </div>
+          <div class="fam-photo">
+            <img src="images/family/bigsister.jpg" alt="Siblings dressed up" />
+            <div class="fam-photo-cap">🎩 Dressed to Impress</div>
+          </div>
+          <div class="fam-photo">
+            <img src="images/family/bigbrother.jpg" alt="Brother as king" />
+            <div class="fam-photo-cap">👑 The King &amp; His Look</div>
+          </div>
+          <div class="fam-photo fam-photo--wide">
+            <img src="images/family/stpatricks.jpg" alt="Brother and baby Claiya Lou" />
+            <div class="fam-photo-cap">💚 Big Bro &amp; Baby Claiya — St. Patrick's Day</div>
+          </div>
+          <div class="fam-photo">
+            <img src="images/family/aquarium.jpg" alt="Siblings at aquarium" />
+            <div class="fam-photo-cap">🐋 Aquarium Adventure</div>
+          </div>
+        </div>
+
+        <!-- Family Story Quote -->
+        <div class="family-quote-band">
+          <div class="fqb-inner">
+            <div class="fqb-emoji">💛</div>
+            <blockquote>"She's the youngest. She's the smallest. She's the one they all fight over holding — and the one who holds all their hearts."</blockquote>
+            <cite>— A family that loves like this one 🥹</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GIFT MESSAGE SECTION ===== -->
+    <section class="gift-section">
+      <div class="container">
+        <div class="gift-card-wrap">
+          <div class="gift-left">
+            <span class="section-tag light">💌 Add a Gift Message</span>
+            <h2>Make It <em>Truly</em> Personal</h2>
+            <p>Add a heartfelt message from you to her on the first page. Write in your own words — it will be beautifully typeset and printed as the opening dedication.</p>
+            <div class="gift-features">
+              <div class="gift-feature"><i class="fas fa-check-circle"></i> Your words, beautifully designed</div>
+              <div class="gift-feature"><i class="fas fa-check-circle"></i> Gift wrapping available</div>
+              <div class="gift-feature"><i class="fas fa-check-circle"></i> Ships directly to the recipient</div>
+              <div class="gift-feature"><i class="fas fa-check-circle"></i> Comes in a gorgeous keepsake box</div>
+            </div>
+            <a href="#books" class="btn btn-primary">Create the Perfect Gift <i class="fas fa-gift"></i></a>
+          </div>
+          <div class="gift-right">
+            <div class="gift-message-preview">
+              <div class="gmp-header">
+                <i class="fas fa-book-open"></i>
+                <span>Dedicated with love</span>
+              </div>
+              <div class="gmp-body">
+                <p class="gmp-to">To my dearest little niece,</p>
+                <p class="gmp-text">You are the bravest, most magical little girl I know. Every time I look at you, I see a world of adventures waiting to happen. This book is yours — because you are the hero of every story.</p>
+                <p class="gmp-from">With all my love, Uncle ❤️</p>
+              </div>
+              <div class="gmp-decoration">✨ 🌸 ✨</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== REVIEWS SECTION ===== -->
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Happy Families</span>
+          <h2 class="section-title">Stories That <em>Touched Hearts</em></h2>
+          <div class="reviews-summary">
+            <div class="overall-rating">4.9</div>
+            <div class="rating-details">
+              <div class="rating-stars">★★★★★</div>
+              <div class="rating-count">Based on 4,800+ verified reviews</div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-grid">
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"My niece was SPEECHLESS when she saw herself as the princess. She carried it everywhere for a week. Best gift I've ever given — full stop."</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar" style="background: linear-gradient(135deg, #f093fb, #f5576c);">K</div>
+              <div>
+                <div class="reviewer-name">Karima B.</div>
+                <div class="reviewer-meta">Aunt · Dubai, UAE · The Princess Inside</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card featured-review">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"She read it every single night for a month. The illustrations are so beautiful — you can tell real artists created this. Worth every penny and more."</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">S</div>
+              <div>
+                <div class="reviewer-name">Sophie M.</div>
+                <div class="reviewer-meta">Mum · London, UK · Unicorn Skies</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"I ordered this for my daughter's 4th birthday and the reaction was priceless. She recognised herself immediately and shouted 'That's ME!'. Absolutely magical."</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">L</div>
+              <div>
+                <div class="reviewer-name">Laila H.</div>
+                <div class="reviewer-meta">Mum · Toronto, Canada · Super Girl</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"The quality is stunning — hardcover, thick pages, gorgeous colours. The dedication page made me cry. This is a keepsake she'll have forever."</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar" style="background: linear-gradient(135deg, #fa709a, #fee140);">N</div>
+              <div>
+                <div class="reviewer-name">Nadia T.</div>
+                <div class="reviewer-meta">Grandmother · Paris, France · The Animal Keeper</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"Ordered 3 different books — one for each grandchild. The process was so easy and each one came out perfectly. The kids fight over who gets to read theirs first!"</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);">A</div>
+              <div>
+                <div class="reviewer-name">Amira C.</div>
+                <div class="reviewer-meta">Grandmother · Sydney, Australia · Multiple Books</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"Even my 6-year-old who 'doesn't like reading' now asks for her storybook every night at bedtime. It's changed our whole evening routine. Incredible gift idea."</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar" style="background: linear-gradient(135deg, #ffecd2, #fcb69f);">R</div>
+              <div>
+                <div class="reviewer-name">Rania P.</div>
+                <div class="reviewer-meta">Mum · New York, USA · Ocean Explorer</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="reviews-cta">
+          <a href="#books" class="btn btn-primary">Join 4,800+ Happy Families <i class="fas fa-heart"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY US SECTION ===== -->
+    <section class="why-us">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Why Claiya Lou</span>
+          <h2 class="section-title">More Than a Book — <em>A Memory</em></h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon">🎨</div>
+            <h3>Hand-Crafted Illustrations</h3>
+            <p>Every page is beautifully illustrated by our team of professional children's book artists — not AI-generated templates.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">🔒</div>
+            <h3>Privacy First</h3>
+            <p>Your child's photo is used only for this book and deleted from our servers after printing. Your family's privacy is sacred to us.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">📦</div>
+            <h3>Premium Quality</h3>
+            <p>Hardcover binding, thick FSC-certified pages, vibrant fade-resistant inks. Built to last a lifetime, not just a birthday.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">💎</div>
+            <h3>Digital Preview Included</h3>
+            <p>See the complete book digitally before we print. Not happy? We'll revise it until you love every single page.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">🚀</div>
+            <h3>Fast & Reliable Delivery</h3>
+            <p>Ships within 48 hours of preview approval. Express options available for last-minute gifts. Tracked worldwide.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">💝</div>
+            <h3>100% Happiness Guarantee</h3>
+            <p>If you're not completely delighted, we'll reprint or refund — no questions asked. Your joy is our only measure of success.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="section-header">
+          <span class="section-tag">Got Questions?</span>
+          <h2 class="section-title">Everything You <em>Need to Know</em></h2>
+        </div>
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>What photo should I upload?</span>
+              <i class="fas fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Any clear, front-facing photo works best. The photo should be well-lit and show your child's face clearly. Even a good smartphone photo is perfect — our artists work their magic from there!</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>How long does it take to receive the book?</span>
+              <i class="fas fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>After you approve the digital preview (usually within 3–5 days), your book is printed and ships within 48 hours. Standard delivery takes 5–7 business days. Express options are available at checkout.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Can I preview the book before it's printed?</span>
+              <i class="fas fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely — this is one of our favourite features! You'll receive a full digital PDF preview of every single page before we go to print. Request changes, and we'll revise until it's perfect.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>What ages are the books suitable for?</span>
+              <i class="fas fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Our books are designed for children ages 1–9, though the magic of seeing yourself as the hero tends to delight children of all ages! Each book has an age recommendation on its product page.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Can I add a personal dedication message?</span>
+              <i class="fas fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! During the ordering process, you can write a heartfelt dedication message that will be beautifully typeset on the first page. It's the detail that makes everyone tear up — in the best way.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>What if I'm not happy with the result?</span>
+              <i class="fas fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>We stand behind every book with our 100% Happiness Guarantee. If for any reason you're not delighted with the final product, we'll reprint it at no cost or refund you completely. Your satisfaction comes first.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FINAL CTA ===== -->
+    <section class="final-cta">
+      <div class="final-cta-bg"></div>
+      <div class="container final-cta-content">
+        <div class="final-cta-emoji">✨</div>
+        <h2>Give Her the Gift of Being<br /><em>the Hero of Her Own Story</em></h2>
+        <p>A magical keepsake she'll read, reread, and treasure. The most personal gift you'll ever give.</p>
+        <a href="#books" class="btn btn-primary btn-large pulse-btn">
+          <i class="fas fa-magic"></i> Create Her Book Now
+        </a>
+        <div class="final-cta-reassurance">
+          <span>✅ Free digital preview</span>
+          <span>✅ Ships in 48 hrs</span>
+          <span>✅ 100% Happiness Guarantee</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <span class="logo-icon">📖</span>
+          <span class="logo-text">Claiya Lou</span>
+        </div>
+        <p>Turning little girls into the heroes of their own magical stories, one personalised book at a time.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Books</h4>
+        <ul>
+          <li><a href="#">Princess & Magic</a></li>
+          <li><a href="#">Unicorn Adventures</a></li>
+          <li><a href="#">Super Girl</a></li>
+          <li><a href="#">Ocean Explorer</a></li>
+          <li><a href="#">The Enchanted Forest</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#">Track My Order</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Returns</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>We Ship Worldwide 🌍</h4>
+        <p class="footer-note">Express delivery available. All orders tracked. Ships from our UAE & UK studios.</p>
+        <div class="payment-icons">
+          <span>💳 Visa</span>
+          <span>💳 Mastercard</span>
+          <span>🍎 Apple Pay</span>
+          <span>🅿️ PayPal</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Claiya Lou Books. Made with ❤️ for little girls everywhere.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== CART TOAST ===== -->
+  <div class="cart-toast" id="cartToast">
+    <i class="fas fa-check-circle"></i>
+    <span id="cartToastMsg">Added to cart!</span>
+  </div>
+
+  <!-- ===== PREVIEW MODAL ===== -->
+  <div class="modal-overlay" id="previewModal" onclick="closePreviewOutside(event)">
+    <div class="modal-content preview-modal-content">
+      <button class="modal-close" onclick="closePreview()">✕</button>
+      <div class="modal-header">
+        <div class="modal-header-tag">📖 Story Preview</div>
+        <h3 id="modalTitle">Book Preview</h3>
+        <p id="modalSubtitle">See a sneak peek of her magical story</p>
+      </div>
+      <div class="modal-preview-pages" id="modalPages">
+        <!-- Filled by JS -->
+      </div>
+      <div class="story-pages-preview" id="storyPagesPreview">
+        <!-- Story pages filled by JS -->
+      </div>
+      <div class="modal-cta">
+        <p>Love what you see? Personalise it with her photo and name!</p>
+        <button class="btn btn-primary" id="previewPersonaliseBtn" onclick="openPersonalise(this.getAttribute('data-book'))" data-book="">
+          <i class="fas fa-magic"></i> Personalise This Book
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PERSONALISE MODAL ===== -->
+  <div class="modal-overlay" id="personaliseModal" onclick="closePersonaliseOutside(event)">
+    <div class="modal-content personalise-modal-content">
+      <button class="modal-close" onclick="closePersonalise()">✕</button>
+      <div class="personalise-steps-indicator">
+        <div class="ps-step active" id="psStep1Ind"><span>1</span> Choose Book</div>
+        <div class="ps-step-divider">→</div>
+        <div class="ps-step" id="psStep2Ind"><span>2</span> Her Details</div>
+        <div class="ps-step-divider">→</div>
+        <div class="ps-step" id="psStep3Ind"><span>3</span> Gift Message</div>
+      </div>
+
+      <!-- Step 1: Book Selection -->
+      <div class="personalise-step" id="psStep1">
+        <div class="personalise-step-header">
+          <h3>✨ You're personalising:</h3>
+        </div>
+        <div class="selected-book-preview" id="selectedBookPreview">
+          <!-- Filled by JS -->
+        </div>
+        <div class="format-selector">
+          <h4>Choose Format</h4>
+          <div class="format-options">
+            <label class="format-option">
+              <input type="radio" name="format" value="hardcover" checked />
+              <div class="format-card">
+                <div class="format-icon">📗</div>
+                <div class="format-name">Hardcover</div>
+                <div class="format-price">$39.99</div>
+                <div class="format-desc">Premium hardcover, 28 pages, thick FSC paper</div>
+              </div>
+            </label>
+            <label class="format-option">
+              <input type="radio" name="format" value="digital" />
+              <div class="format-card">
+                <div class="format-icon">📱</div>
+                <div class="format-name">Digital PDF</div>
+                <div class="format-price">$14.99</div>
+                <div class="format-desc">Instant download, print at home, share anywhere</div>
+              </div>
+            </label>
+            <label class="format-option">
+              <input type="radio" name="format" value="bundle" />
+              <div class="format-card best-value">
+                <div class="format-badge">Best Value</div>
+                <div class="format-icon">🎁</div>
+                <div class="format-name">Bundle</div>
+                <div class="format-price">$49.99</div>
+                <div class="format-desc">Hardcover + Digital PDF + Keepsake box</div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-full" onclick="psGoToStep(2)">
+          Next: Her Details <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <!-- Step 2: Child Details -->
+      <div class="personalise-step hidden" id="psStep2">
+        <div class="personalise-step-header">
+          <h3>📸 Tell us about her</h3>
+          <p>These details make the book uniquely hers</p>
+        </div>
+        <div class="personalise-form">
+          <div class="form-group">
+            <label class="form-label">Her Name *</label>
+            <input type="text" class="form-input" id="childName" placeholder="e.g. Claiya Lou" maxlength="20" />
+            <div class="form-hint">This will appear throughout the story (max 20 characters)</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Her Age</label>
+            <select class="form-input" id="childAge">
+              <option value="">Select age...</option>
+              <option>Under 1</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Upload Her Photo *</label>
+            <div class="photo-upload-area" id="photoUploadArea" onclick="document.getElementById('photoFileInput').click()">
+              <input type="file" id="photoFileInput" accept="image/*" style="display:none" onchange="handlePhotoUpload(this)" />
+              <div class="photo-upload-placeholder" id="photoPlaceholder">
+                <div class="upload-icon">📸</div>
+                <div class="upload-text">Click to upload her photo</div>
+                <div class="upload-hint">JPG, PNG · Any phone photo works · Min 300px</div>
+              </div>
+              <img id="photoPreviewImg" class="photo-preview-img hidden" alt="Uploaded photo preview" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Skin Tone (helps our illustrators match perfectly)</label>
+            <div class="skin-tone-selector" id="skinToneSelector">
+              <div class="st-option selected" data-tone="1" style="background:#FDDBB4" onclick="selectSkinTone(this, '1')" title="Light"></div>
+              <div class="st-option" data-tone="2" style="background:#F5C5A3" onclick="selectSkinTone(this, '2')" title="Light Medium"></div>
+              <div class="st-option" data-tone="3" style="background:#D4956A" onclick="selectSkinTone(this, '3')" title="Medium"></div>
+              <div class="st-option" data-tone="4" style="background:#B07040" onclick="selectSkinTone(this, '4')" title="Medium Dark"></div>
+              <div class="st-option" data-tone="5" style="background:#7D4B27" onclick="selectSkinTone(this, '5')" title="Dark"></div>
+              <div class="st-option" data-tone="6" style="background:#4A2512" onclick="selectSkinTone(this, '6')" title="Deep"></div>
+            </div>
+          </div>
+        </div>
+        <div class="step-nav">
+          <button class="btn btn-ghost" onclick="psGoToStep(1)"><i class="fas fa-arrow-left"></i> Back</button>
+          <button class="btn btn-primary" onclick="psGoToStep(3)">Next: Gift Message <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Step 3: Gift Message -->
+      <div class="personalise-step hidden" id="psStep3">
+        <div class="personalise-step-header">
+          <h3>💌 Add your personal touch</h3>
+          <p>This message will be beautifully printed on the first page</p>
+        </div>
+        <div class="personalise-form">
+          <div class="form-group">
+            <label class="form-label">Gift Message (optional)</label>
+            <textarea class="form-input form-textarea" id="giftMessage" placeholder="e.g. To my dearest little niece, you are the bravest, most magical little girl I know. This book is yours — because you are the hero of every story. With all my love, Uncle ❤️" maxlength="300" oninput="updateCharCount()"></textarea>
+            <div class="char-count"><span id="charCount">0</span>/300 characters</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">From (how to sign the message)</label>
+            <input type="text" class="form-input" id="giftFrom" placeholder="e.g. Uncle Mehdi ❤️" maxlength="40" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Add-ons</label>
+            <div class="addons-list">
+              <label class="addon-item">
+                <input type="checkbox" id="addonGiftWrap" value="4.99" onchange="updateOrderSummary()" />
+                <div class="addon-info">
+                  <span class="addon-name">🎁 Premium Gift Wrapping</span>
+                  <span class="addon-price">+$4.99</span>
+                </div>
+              </label>
+              <label class="addon-item">
+                <input type="checkbox" id="addonExpress" value="12.99" onchange="updateOrderSummary()" />
+                <div class="addon-info">
+                  <span class="addon-name">⚡ Express Delivery (2–3 days)</span>
+                  <span class="addon-price">+$12.99</span>
+                </div>
+              </label>
+              <label class="addon-item">
+                <input type="checkbox" id="addonNamePage" value="0" checked disabled />
+                <div class="addon-info">
+                  <span class="addon-name">✨ Free Personalised Name Page</span>
+                  <span class="addon-price free-tag">FREE</span>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="order-summary-mini" id="orderSummaryMini">
+            <!-- Filled by JS -->
+          </div>
+        </div>
+        <div class="step-nav">
+          <button class="btn btn-ghost" onclick="psGoToStep(2)"><i class="fas fa-arrow-left"></i> Back</button>
+          <button class="btn btn-primary btn-checkout-go" onclick="addToCartFromPersonalise()">
+            <i class="fas fa-shopping-bag"></i> Add to Cart — <span id="psTotal">$39.99</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CART SIDEBAR ===== -->
+  <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-sidebar-header">
+      <h3><i class="fas fa-shopping-bag"></i> Your Gift Bag</h3>
+      <button class="cart-close-btn" onclick="closeCart()">✕</button>
+    </div>
+    <div class="cart-items-wrap" id="cartItemsWrap">
+      <!-- Filled by JS -->
+    </div>
+    <div class="cart-empty" id="cartEmpty">
+      <div class="cart-empty-icon">🎁</div>
+      <p>Your gift bag is empty</p>
+      <button class="btn btn-primary" onclick="closeCart(); scrollToBooks();">Browse Books</button>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">$0.00</span>
+      </div>
+      <div class="cart-shipping-note">🚚 Free shipping on orders over $60</div>
+      <button class="btn btn-primary btn-full btn-checkout" id="checkoutBtn" onclick="openCheckout()">
+        <i class="fas fa-lock"></i> Proceed to Checkout
+      </button>
+      <button class="btn btn-ghost btn-full" onclick="closeCart(); scrollToBooks();">
+        ← Continue Shopping
+      </button>
+    </div>
+  </div>
+
+  <!-- ===== CHECKOUT MODAL ===== -->
+  <div class="modal-overlay" id="checkoutModal" onclick="closeCheckoutOutside(event)">
+    <div class="modal-content checkout-modal-content">
+      <button class="modal-close" onclick="closeCheckout()">✕</button>
+
+      <div class="checkout-layout">
+        <!-- Left: Form -->
+        <div class="checkout-form-section">
+          <h3 class="checkout-title"><i class="fas fa-lock"></i> Secure Checkout</h3>
+
+          <div class="checkout-section-block">
+            <h4>📦 Delivery Information</h4>
+            <div class="checkout-form-grid">
+              <div class="form-group">
+                <label class="form-label">First Name *</label>
+                <input type="text" class="form-input" id="co-fname" placeholder="Mehdi" />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Last Name *</label>
+                <input type="text" class="form-input" id="co-lname" placeholder="Alaoui" />
+              </div>
+              <div class="form-group full-width">
+                <label class="form-label">Email Address *</label>
+                <input type="email" class="form-input" id="co-email" placeholder="your@email.com" />
+              </div>
+              <div class="form-group full-width">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" class="form-input" id="co-phone" placeholder="+971 50 000 0000" />
+              </div>
+              <div class="form-group full-width">
+                <label class="form-label">Delivery Address *</label>
+                <input type="text" class="form-input" id="co-address" placeholder="Apartment, street, building..." />
+              </div>
+              <div class="form-group">
+                <label class="form-label">City *</label>
+                <input type="text" class="form-input" id="co-city" placeholder="Dubai" />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Country *</label>
+                <select class="form-input" id="co-country">
+                  <option value="">Select country...</option>
+                  <option selected>United Arab Emirates</option>
+                  <option>United Kingdom</option>
+                  <option>United States</option>
+                  <option>Canada</option>
+                  <option>Australia</option>
+                  <option>France</option>
+                  <option>Saudi Arabia</option>
+                  <option>Qatar</option>
+                  <option>Kuwait</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="checkout-section-block">
+            <h4>💳 Payment Details</h4>
+            <div class="payment-methods-tabs">
+              <button class="pm-tab active" onclick="switchPayment('card', this)">💳 Card</button>
+              <button class="pm-tab" onclick="switchPayment('paypal', this)">🅿️ PayPal</button>
+              <button class="pm-tab" onclick="switchPayment('apple', this)">🍎 Apple Pay</button>
+            </div>
+            <div id="paymentCard" class="payment-form-section">
+              <div class="checkout-form-grid">
+                <div class="form-group full-width">
+                  <label class="form-label">Card Number *</label>
+                  <input type="text" class="form-input" id="co-card" placeholder="1234 5678 9012 3456" maxlength="19" oninput="formatCardNumber(this)" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Expiry *</label>
+                  <input type="text" class="form-input" id="co-expiry" placeholder="MM/YY" maxlength="5" oninput="formatExpiry(this)" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">CVV *</label>
+                  <input type="text" class="form-input" id="co-cvv" placeholder="123" maxlength="4" />
+                </div>
+                <div class="form-group full-width">
+                  <label class="form-label">Cardholder Name *</label>
+                  <input type="text" class="form-input" id="co-cardname" placeholder="Name as on card" />
+                </div>
+              </div>
+            </div>
+            <div id="paymentPaypal" class="payment-form-section hidden">
+              <div class="paypal-info">
+                <div class="paypal-logo">🅿️ PayPal</div>
+                <p>You'll be redirected to PayPal to complete your payment securely after placing the order.</p>
+              </div>
+            </div>
+            <div id="paymentApple" class="payment-form-section hidden">
+              <div class="apple-pay-info">
+                <div class="apple-logo">🍎</div>
+                <p>Apple Pay detected. You'll be prompted to confirm payment with Face ID or Touch ID.</p>
+                <button class="apple-pay-btn">Pay with 🍎 Apple Pay</button>
+              </div>
+            </div>
+            <div class="secure-badges">
+              <span>🔒 SSL Encrypted</span>
+              <span>🛡️ PCI Compliant</span>
+              <span>✅ Safe Checkout</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Order Summary -->
+        <div class="checkout-summary-section">
+          <h4>🛍️ Order Summary</h4>
+          <div class="checkout-order-items" id="checkoutOrderItems">
+            <!-- Filled by JS -->
+          </div>
+          <div class="checkout-totals" id="checkoutTotals">
+            <!-- Filled by JS -->
+          </div>
+          <div class="checkout-guarantee">
+            <div class="guarantee-item"><i class="fas fa-shield-alt"></i> 100% Happiness Guarantee</div>
+            <div class="guarantee-item"><i class="fas fa-redo"></i> Free reprints if needed</div>
+            <div class="guarantee-item"><i class="fas fa-lock"></i> Secure & private</div>
+          </div>
+          <button class="btn btn-primary btn-full btn-place-order" id="placeOrderBtn" onclick="placeOrder()">
+            <i class="fas fa-magic"></i> Place Order
+          </button>
+          <div class="checkout-note">By placing your order you agree to our Terms of Service and Privacy Policy</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ORDER SUCCESS MODAL ===== -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-content success-modal-content">
+      <div class="success-animation">
+        <div class="success-circle">✨</div>
+      </div>
+      <h2 class="success-title">Order Placed! 🎉</h2>
+      <p class="success-subtitle">The magic is about to begin!</p>
+      <div class="success-details" id="successDetails">
+        <!-- Filled by JS -->
+      </div>
+      <div class="success-steps">
+        <div class="ss-step">
+          <div class="ss-step-num">1</div>
+          <div class="ss-step-text">Our artists start working on her personalised illustrations (1–2 days)</div>
+        </div>
+        <div class="ss-step">
+          <div class="ss-step-num">2</div>
+          <div class="ss-step-text">You'll receive a full digital preview via email to approve</div>
+        </div>
+        <div class="ss-step">
+          <div class="ss-step-num">3</div>
+          <div class="ss-step-text">Once approved, we print and ship within 48 hours</div>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-full" onclick="closeSuccess()">
+        <i class="fas fa-heart"></i> Thank You — Back to Shop
+      </button>
+    </div>
+  </div>
+
+  <!-- ===== SENSORY UPSELL MODAL ===== -->
+  <div class="modal-overlay" id="sensoryUpsellModal" onclick="closeSensoryUpsell(event)">
+    <div class="modal-content sensory-upsell-content">
+      <button class="modal-close" onclick="closeSensoryUpsellBtn()" aria-label="Close">✕</button>
+      <div class="su-header">
+        <div class="su-autism-icon">♾️</div>
+        <div class="su-header-copy">
+          <h3>Before You Go…</h3>
+          <p>Have you seen our <strong>Sensory Stories Collection</strong>?</p>
+        </div>
+      </div>
+      <div class="su-body">
+        <p class="su-text">Written specifically for autistic and neurodiverse girls. Simple words. Predictable pages. Stories that make her say: <em>"That's me."</em></p>
+        <div class="su-books-row">
+          <div class="su-book" onclick="closeSensoryUpsellBtn(); addToCart('I Wove You')">
+            <img src="images/books/iwoveyou.jpg" alt="I Wove You" />
+            <span>I Wove You</span>
+          </div>
+          <div class="su-book" onclick="closeSensoryUpsellBtn(); addToCart('Her Magic Headphones')">
+            <img src="images/books/headphones.jpg" alt="Her Magic Headphones" />
+            <span>Her Magic Headphones</span>
+          </div>
+          <div class="su-book" onclick="closeSensoryUpsellBtn(); addToCart('The Perfect Line')">
+            <img src="images/books/perfectline.jpg" alt="The Perfect Line" />
+            <span>The Perfect Line</span>
+          </div>
+          <div class="su-book" onclick="closeSensoryUpsellBtn(); addToCart('Too Much Tuesday')">
+            <img src="images/books/toomuch.jpg" alt="Too Much Tuesday" />
+            <span>Too Much Tuesday</span>
+          </div>
+          <div class="su-book" onclick="closeSensoryUpsellBtn(); addToCart('Her Special Thing')">
+            <img src="images/books/specialthing.jpg" alt="Her Special Thing" />
+            <span>Her Special Thing</span>
+          </div>
+        </div>
+        <div class="su-cta-row">
+          <button class="btn btn-sensory-main" onclick="closeSensoryUpsellBtn(); document.querySelector('[data-filter=sensory]').click(); document.getElementById('books').scrollIntoView({behavior:'smooth'})">
+            🧩 See All 5 Sensory Books
+          </button>
+          <button class="btn btn-ghost su-skip" onclick="closeSensoryUpsellBtn()">No thanks, continue</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SENSORY BUNDLE MODAL ===== -->
+  <div class="modal-overlay" id="sensoryBundleModal" onclick="closeBundleModal(event)">
+    <div class="modal-content sensory-bundle-content">
+      <button class="modal-close" onclick="document.getElementById('sensoryBundleModal').style.display='none'" aria-label="Close">✕</button>
+      <div class="sbm-header">
+        <div class="sbm-icon">📚</div>
+        <h3>The Complete Sensory Stories Collection</h3>
+        <p>All 5 books — every feeling, every experience, every part of her.</p>
+      </div>
+      <div class="sbm-books">
+        <div class="sbm-book"><img src="images/books/iwoveyou.jpg" alt="I Wove You" /><span>I Wove You</span></div>
+        <div class="sbm-book"><img src="images/books/headphones.jpg" alt="Her Magic Headphones" /><span>Her Magic Headphones</span></div>
+        <div class="sbm-book"><img src="images/books/perfectline.jpg" alt="The Perfect Line" /><span>The Perfect Line</span></div>
+        <div class="sbm-book"><img src="images/books/toomuch.jpg" alt="Too Much Tuesday" /><span>Too Much Tuesday</span></div>
+        <div class="sbm-book"><img src="images/books/specialthing.jpg" alt="Her Special Thing" /><span>Her Special Thing</span></div>
+      </div>
+      <div class="sbm-pricing">
+        <span class="sbm-price-new">$149.99</span>
+        <span class="sbm-price-old">$199.95</span>
+        <span class="sbm-save-badge">🔥 Save $50</span>
+      </div>
+      <p class="sbm-note">Each book personalised with her photo, name &amp; skin tone. All 5 sent together.</p>
+      <button class="btn btn-sensory-main btn-full" onclick="addBundleToCart()">
+        🧩 Add Complete Collection to Cart
+      </button>
+      <div class="sbm-guarantee">✅ 100% Happiness Guarantee &nbsp;|&nbsp; 🚀 Ships in 48 hrs</div>
+    </div>
+  </div>
+
+  <!-- ===== SCROLL TO TOP ===== -->
+  <button class="scroll-top-btn" id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script src="js/store.js"></script>
+</body>
+</html>

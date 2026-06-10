@@ -1,0 +1,13 @@
+{
+  "name": "claiya-lou-storybooks",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static storefront for Claiya Lou personalized storybooks",
+  "scripts": {
+    "dev": "serve . -l 4173",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
